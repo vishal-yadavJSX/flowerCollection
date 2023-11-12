@@ -1,0 +1,323 @@
+.header-element {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  /* position: sticky; */
+}
+.mobile-nav-toggle{
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+nav ul li{
+  /* font-weight: 600; */
+  font-family: Poppins;
+}
+nav ul li a:hover{
+  color: rgb(255, 0, 106);
+  /* font-weight: bold; */
+}
+.header-element p{
+  font-weight: bold;
+  font-family: Poppins;
+}
+.header-element p span {
+  color: rgb(255, 0, 106);
+}
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 2.5;
+  font-size: 0.878rem;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  color: grey;
+}
+@media (max-width: 35em) {
+  ul {
+    position: fixed;
+    inset: 0 0 0 30%;
+    gap: 2em;
+    background-color: rgb(255, 0, 106);
+    color: white;
+    flex-direction: column;
+    /* align-content: flex-start; */
+    justify-content: center;
+    font-size: 1.3rem;
+    backdrop-filter: blur(1rem);
+    z-index: 100;
+    transform: translateX(100%); 
+  }
+  nav ul li a{
+    color: white;
+    font-size: 1rem;
+  }
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    width: 3rem;
+    aspect-ratio: 1;
+    z-index: 9999;
+    top: 1.8rem;
+    right: 2rem;
+    background-image: url('noun-hamburger-menu-683452.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: transparent;
+    color: white;
+    border: none;
+    opacity: 0.5;
+  }
+  .header-element p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
+  transition: transform 350ms ease-out;
+}
+
+/* banner-codes */
+.parent-banner{
+  width: auto;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.8)), url('assets/Flower-wallpapers-desktop-wallpaper_17491-840x525.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+
+}
+.sub-text{
+  font-family: monospace;
+  color: white;
+  font-size: 0.9rem;
+  word-spacing: 1.2;
+
+  
+}
+.middle-text{
+  font-family: monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.bottom-text{
+  font-family: monospace;
+}
+.explore-btn{
+  margin-top: 1.4rem;
+  background-color: rgb(255, 0, 106);
+  color: white;
+  border: none;
+  padding: 0.4rem 2rem;
+  font-family: Poppins;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.know-more-btn{
+  margin-top: 1.4rem;
+  background-color: white;
+  /* color: white; */
+  border: none;
+  padding: 0.4rem 1.2rem;
+  font-family: Poppins;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+
+}
+.explore-btn:hover{
+  background-color: white;
+  color: black;
+  /* border: solid black 1px; */
+  border-radius: 2px;
+}
+.explore-btn:active{
+  opacity: 0.5;
+}
+.know-more-btn:active{
+  opacity: 0.5;
+}
+@media (max-width: 35em) {
+  .parent-banner{
+    text-align: left;
+  }
+  .child-description{
+    margin-left: 2rem;
+  }
+  .explore-btn:hover{
+    /* margin-top: 1.4rem; */
+    background-color: rgb(255, 0, 106);
+    color: white;
+    border: none;
+    padding: 0.4rem 2rem;
+    font-family: Poppins;
+    font-weight: bold;
+    border-radius: 2px;
+    /* cursor: pointer; */
+    /* transition: background-color 0.15s; */
+
+  }
+  .header-element{
+    padding-bottom: 2.5rem;
+  }
+}
+/* end of bannerCSS */
+.welcome-text{
+  font-family: monospace;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  color: black;
+  /* background-color: white; */
+}
+.welcome-text span{
+  color: rgb(255, 0, 106);
+}
+.welcome-text-quote{
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: grey;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 35em) {
+  .welcome-text, .welcome-text-quote{
+    text-align: left;
+    margin-left: 2rem;
+  }
+}
+
+/* aboutsection */
+section{
+  background-color: white;
+  margin-inline-end: auto;
+  padding: 3rem 0;
+}
+img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.container{
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  /* flex-wrap: wrap; */
+}
+.about-container{
+  width: 90%;
+}
+.about-container h2{
+  margin-bottom: 1rem;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.about-container p {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+.about-container button {
+  background-color: rgb(255, 0, 106);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.about-container button:active{
+  opacity: 0.5;
+}
+.about-container{
+  margin-left: 2rem;
+}
+@media (max-width: 35em) {
+  .container{
+    flex-wrap: wrap;
+  }
+}
+.center-text{
+  text-align: center;
+}
+.center-text .ft-collection-p{
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
+.center-text .welcome-text-quote{
+  font-size: 0.99rem;
+  color: grey;
+  text-align: center;
+}
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+.contact-us h2{
+  font-size: 2rem;
+  font-family: Poppins;
+}
+.c-hold{
+  display: flex;
+  gap: 1rem;
+}
+footer{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.know-more-btn a{
+  color: black;
+}
+.about-container input{
+  width: 90%;
+  height: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  text-align: left;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+.about-container button{
+  margin-bottom: 2rem;
+  background-color: blue;
+}
